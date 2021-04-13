@@ -99,11 +99,12 @@ body, html {
         border-top: 2px solid darkorange;
         border-left: 2px solid darkorange;
         border-bottom: 2px solid darkorange;
+        border-right: 2px solid darkorange;
         width:20%;
         height: 20px;
         margin-left: 35%;
         text-align: center;
-        padding: 12px 28px;
+        padding: 20px 28px;
 
     }
     
