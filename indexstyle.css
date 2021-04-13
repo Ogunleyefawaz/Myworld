@@ -1,0 +1,256 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body, html {
+    height: 100%
+  }
+  
+  .bgimg {
+    /* Background image */
+    background-image: url('/assets/nice.jpg');
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+  }
+  
+  /* Position text in the top-left corner */
+  .topleft {
+    position: absolute;
+    top: 3px;
+    left: 16px;
+    border: 2px solid white;
+    font-weight: 900;
+  }
+  #diamond {
+     font-size: 40px; 
+     color: yellow;
+  }
+  /* Position text in the bottom-left corner */
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  /* Position text in the middle */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'lucida sans';
+    
+  }
+  .middle p{
+      font-size: 20px;
+  }
+  .menu {
+    position: absolute;
+    right:10px;
+    top:1.5rem
+}
+ /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+ #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  #links  {
+    
+    text-decoration: none;
+    text-align: center;
+    
+    color: black;
+    display: block;
+    font-family: 'Lucida Sans';
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight:900;
+         
+         font-variant-caps:all-small-caps;
+    
+    
+  }
+  #long {
+      color: darkorange;
+        font-size:30px;
+    }
+    #about {
+        margin-top: 2% ;
+
+    }
+    #about h2  {
+        border-bottom-right-radius: 60px solid darkorange ;
+        color:darkorange;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        border-top: 2px solid darkorange;
+        border-left: 2px solid darkorange;
+        border-bottom: 2px solid darkorange;
+        width:20%;
+        height: 20px;
+        margin-left: 35%;
+        text-align: center;
+        padding: 12px 28px;
+
+    }
+    
+  #Navigate {
+    color: darkorange;
+    display: block;
+    font-family: 'trebuchet ms';
+    margin-left: 6%;
+  }
+  #links:hover {
+      padding:5px;
+      transition:  .5s;
+      color:darkorange;
+  }
+  #ceo {
+      border-radius: 150px;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    
+   
+
+  }
+ 
+  /* Style the <hr> element */
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+  @media screen and (max-width:750px) {
+    .middle {
+        
+        left: 75%;
+        
+        
+      }
+  }.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right:0;
+    background-color: gainsboro; /* Black*/
+    overflow-x: hidden; 
+    overflow-y: hidden;/* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  .nav-1  {
+   
+    font-size: 17px;
+    font-weight:500;
+    word-spacing: 2.3em;
+    font-variant-caps:all-small-caps;
+    left:27rem;
+    padding: 14px 16px;
+    position: absolute;
+    top:10px;
+    
+}
+.nav-1 a{
+     color:  black;
+    text-decoration: none;
+     font-family: 'trebuchet ms';
+}
+.nav-1 a:hover{
+    border-bottom: 2px solid mediumspringgreen;
+}
+.nav-2 a {
+    font-size: 14px;
+    font-weight:500;
+         
+    right:5rem;
+    padding: 10px;
+    position: absolute;
+    top:15px;
+    
+}
+.nav-2 a{
+    color:  black;
+   text-decoration: none;
+   font-family: 'trebuchet ms';
+    padding:14px 16px;
+    background-color: mediumspringgreen;
+}
+.containers {
+    background-color:aliceblue;
+    
+}
+.container-1, .container-2, .container-3 {
+    padding:20px;
+}
+.container-1 h4, .container-2 h4, .container-3 h4 {
+    color:darkorange;
+    font-family: arial;
+    font-weight: 900;
+    
+}
+.container-3 h1{
+    color:black;
+    font-family: impact;
+    font-weight: 900;
+   
+    font-variant-caps:all-small-caps;
+}
+.container-1 h1, .container-2 h1 {
+    color:black;
+    font-family: impact;
+    font-weight: 900;
+    font-variant-caps:all-small-caps;
+}
+.container-1 p, .container-2 p, .container-3 p {
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20PX;
+   
+}
+@media screen and (min-width:900px) {
+    .containers {
+        width:100%;
+        
+    }
+    .container-1 {
+        float:left;
+        width:29%;
+
+    }   
+    .container-2 {
+        float:left;
+        width:29%;
+    }
+    .container-3 {
+        float: left;
+        width:29%;
+    
+        
+    }
+}
